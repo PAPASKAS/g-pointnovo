@@ -1,0 +1,21 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/animate.css/animate.compat.css";
+
+// services
+.services .card {
+  padding: 0;
+
+  @for $i from 1 to 12 {
+    $duration: $i * 0.3;
+
+    &:nth-child(#{ $i }) {
+      animation: fadeInLeft;
+      animation-duration: $duration + s;
+    }
+  }
+
+  img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+}
