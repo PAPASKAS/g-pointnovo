@@ -2,10 +2,10 @@
 
 function service_component(string $img_name, string $title, string $text): void {
   $template = get_template_directory_uri();
-  
+
   echo <<<HTML
     <div class="card col-md-5 col-12 wow">
-      <img src="{$template}/img/services/{$img_name}" class="card-img-top" alt="{$img_name}">
+      <img src="{$template}/images/services/{$img_name}" class="card-img-top" alt="{$img_name}">
       <div class="card-body">
         <hr />
         <h5 class="card-title">{$title}</h5>

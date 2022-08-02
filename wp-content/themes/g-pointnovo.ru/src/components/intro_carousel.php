@@ -6,7 +6,7 @@ function carousel_item(string $img_name, bool $active = false): void {
 
   echo <<<HTML
     <div class="{$is_active}">
-      <img src="{$template}/img/{$img_name}" class="d-block w-100" alt="{$img_name}">
+      <img src="{$template}/images/{$img_name}" class="d-block w-100" alt="{$img_name}">
     </div>
   HTML;
 }
